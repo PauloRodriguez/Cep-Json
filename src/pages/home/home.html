@@ -1,9 +1,13 @@
 <ion-header>
+  <ion-navbar>
+    <ion-title>Via CEP</ion-title>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<h3 align="center">Cep</h3>
-<hr>
   <form [formGroup]="formGroup" (ngSubmit)="buscaCEP()">
     <ion-item>
       <ion-label stacked>Digite o CEP</ion-label>
